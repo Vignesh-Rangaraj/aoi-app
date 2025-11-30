@@ -1,0 +1,53 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - button "<" [active] [ref=e6] [cursor=pointer]
+      - generic [ref=e7]: Define Project Scope
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]: STEP 1
+        - generic [ref=e11]:
+          - generic [ref=e12]: Select Base Image
+          - button "＋" [ref=e13] [cursor=pointer]
+      - generic [ref=e14]:
+        - generic [ref=e15]: STEP 2
+        - generic [ref=e16]:
+          - generic [ref=e17]: Define Area of Interest
+          - button "＋" [ref=e18] [cursor=pointer]
+        - generic [ref=e19]:
+          - generic [ref=e20]: Define the area(s) where you will apply your object count & detection model
+          - generic [ref=e21]: "Options:"
+          - button "🔍 Cologne – City Proper" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: 🔍
+            - generic [ref=e25]: Cologne – City Proper
+          - button "Or click to draw area on map" [ref=e26] [cursor=pointer]
+          - button "⬆ Uploading a shape file" [ref=e27] [cursor=pointer]
+        - generic [ref=e29] [cursor=pointer]:
+          - generic [ref=e32]: Area 1
+          - generic [ref=e33]:
+            - button "👁" [ref=e34]
+            - button "🗑" [ref=e35]
+      - generic [ref=e36]:
+        - generic [ref=e37]: STEP 3
+        - generic [ref=e38]:
+          - generic [ref=e39]: Define Objects
+          - button "＋" [ref=e40] [cursor=pointer]
+    - button "Scope definition finished" [ref=e42] [cursor=pointer]
+  - generic [ref=e44]:
+    - generic:
+      - generic:
+        - img
+    - generic:
+      - generic [ref=e46]:
+        - button "Zoom in" [ref=e47] [cursor=pointer]: +
+        - button "Zoom out" [ref=e48] [cursor=pointer]: −
+      - generic [ref=e49]:
+        - link "Leaflet" [ref=e50] [cursor=pointer]:
+          - /url: https://leafletjs.com
+          - img [ref=e51]
+          - text: Leaflet
+        - text: "| © OpenStreetMap contributors"
+```
