@@ -17,11 +17,12 @@ Thoughtful engineering tradeoffs & decisions
 📸 Demo Preview
 
 A short 3–5 minute demo video showcasing search, AOI creation, drawing, deleting, and workflow navigation.
-(Add your Google Drive or YouTube unlisted link here)
+
 
 📦 Features Implemented
 
 ✔ Matches the Figma-provided UI design
+
 ✔ Search for regions and instantly create AOIs
 ✔ Click-to-draw AOI polygons
 ✔ Double-click to finalize polygon
@@ -32,13 +33,15 @@ A short 3–5 minute demo video showcasing search, AOI creation, drawing, deleti
 ✔ 2 of 3 Playwright tests passing (test suite demonstrates approach & thinking)
 
 🏗️ Tech Stack
-Layer	Technology
-Frontend Framework	React + TypeScript
-Map Engine	Leaflet (via react-leaflet)
-Build Tool	Vite
-State Mgmt	Local React state
-End-to-End Tests	Playwright
-Styling	TailwindCSS
+| Layer                  | Technology                  |
+| ---------------------- | --------------------------- |
+| **Frontend Framework** | React + TypeScript          |
+| **Map Engine**         | Leaflet (via react-leaflet) |
+| **Build Tool**         | Vite                        |
+| **State Management**   | Local React state           |
+| **End-to-End Tests**   | Playwright                  |
+| **Styling**            | TailwindCSS                 |
+
 📁 Project Structure
 src/
  ├─ components/
@@ -160,14 +163,15 @@ lng: number
 
 ER Diagram (ASCII):
 
-+--------+        *        +---------+
-|  AOI   |---------------->| LatLng  |
-+--------+                 +---------+
-| id     |                 | lat     |
-| name   |                 | lng     |
-| visible|                 +---------+
-| ...    |
-+--------+
++-----------------+           1 : N            +------------------+
+|       AOI       | -------------------------> |      LatLng      |
++-----------------+                            +------------------+
+| id              |                            | id               |
+| name            |                            | lat              |
+| visible         |                            | lng              |
++-----------------+                            | name             |
+                                               | visible          |
+                                               +------------------+
 
 🔌 API Documentation (Future-Ready)
 
